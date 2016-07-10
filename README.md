@@ -17,12 +17,12 @@ vnc
 
 
 # Steps:
-1. remote connect your GoPiGo through ssh
+1.remote connect your GoPiGo through ssh
 ```
 ssh USERNAME@IP.ADDRESS
 ```
 
-2. Start remote desktop control
+2.Start remote desktop control
 ```
 tightvncserver
 vncserver :1 -geometry 1920x1080 -depth 24
@@ -37,17 +37,17 @@ start Remote Desktop Viewer on your PC. Then login your GoPiGo.
 8. Copy or scp your ```Data``` folder to PC or Laptop and trained them using inception @petewarden  [Tensorflow for Poets](https://petewarden.com/2016/02/28/tensorflow-for-poets/)
 
 # Then after you have your network trained, you can do the following to control your GoPiGo.
-1. Run server.py on laptop or desktop with wifi by typing:
+1.Run server.py on laptop or desktop with wifi by typing:
 ```
 python server.py --model=LOCATION of YOUR .pb FILE --labels=LOCATION of YOUR .txt LABEL FILE
 ```   
 
-2. Run client.py on GoPiGo:
+2.Run client.py on GoPiGo:
 ```
 python client.py
 ```
 
-3. You should be able to see your GoPiGo drive itself. The larger your training data set is, the better its performance will be. So collect as more data as you can !!! 
+3.You should be able to see your GoPiGo drive itself. The larger your training data set is, the better its performance will be. So collect as more data as you can !!! 
 
 # Explaination of What the server.py code is doing:
 
