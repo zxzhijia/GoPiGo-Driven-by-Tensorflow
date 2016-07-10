@@ -3,10 +3,16 @@ This readme file tends to teach you how to use GoPiGo's camera to record the ima
 
 # How to collection your own data:
 
-# Prerequisite:
-Raspberry Pi Camera successfully setted
-GoPiGo package installed
-vnc
+# Prerequisite on PC or laptop:
+```Tensorflow```
+
+# Prerequisite on GoPiGo:
+```Raspberry Pi Camera enabled```
+
+```GoPiGo package installed```
+
+```vnc```
+
 
 # Steps:
 1. remote connect your GoPiGo through ssh
