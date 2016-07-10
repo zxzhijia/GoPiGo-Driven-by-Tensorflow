@@ -1,6 +1,7 @@
 # GoPiGo Driven by Tensorflow
 GoPiGo robot driven autonomously by trained CNN using retrained Tensorflow inception 3.
 Run server.py on laptop or desktop with wifi by typing:
+
    python server.py --model=LOCATION of the trained .pb file --labels=LOCATION of the trained label .txt file
    
 What server code is doing:
