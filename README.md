@@ -1,9 +1,9 @@
 # GoPiGo Driven by Tensorflow
 GoPiGo robot driven autonomously by trained CNN using retrained Tensorflow inception 3.
 Run server.py on laptop or desktop with wifi by typing:
-
-   python server.py --model=LOCATION of the trained .pb file --labels=LOCATION of the trained label .txt file
-   
+'''
+python server.py --model=LOCATION of the trained .pb file --labels=LOCATION of the trained label .txt file
+'''   
 What server code is doing:
 1. create socket and listening. 
 2. Build the trained network using .pb file and txt file.
@@ -17,4 +17,7 @@ What client code is doing:
 4. Receive output command from server through TCP.
 5. excute command to control the robot.
 
-
+Run client.py on GoPiGo:
+'''
+python client.py
+'''
