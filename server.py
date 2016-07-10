@@ -23,7 +23,6 @@ def run_inference(images, out_file, labels, model_file, k=2):
     answer = None
 
     # Creates graph from saved GraphDef.
-    create_graph(model_file=args['model'])
     if out_file:
         out_file = open(out_file, 'wb', 1)
     
@@ -71,6 +70,7 @@ if __name__ == '__main__':
       port = 12344                 # Reserve a port for your service.
       s.bind(('', port))        # Bind to the port
       f = open('torecv.jpg','wb')
+      create_graph(model_file=args['model'])
       while True:
             # Read input
             f = open('torecv.jpg','wb')
