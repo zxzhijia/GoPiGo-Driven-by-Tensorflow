@@ -26,9 +26,7 @@ start Remote Desktop Viewer on your PC. Then login your GoPiGo.
 5. run ```python datacollection.py```
 6. Control your GoPiGo to follow the "road" you've built using either white paper or other materials.
 7. The images will be saved in ```a, w, d``` folders. 
-8. Copy or scp your ```Data``` folder to PC or Laptop and trained them using inception @petewarden  Tensorflow for Poets 
-
-[a link](https://petewarden.com/2016/02/28/tensorflow-for-poets/)
+8. Copy or scp your ```Data``` folder to PC or Laptop and trained them using inception @petewarden  [Tensorflow for Poets](https://petewarden.com/2016/02/28/tensorflow-for-poets/)
 
 
 Run server.py on laptop or desktop with wifi by typing:
