@@ -1,5 +1,34 @@
 # GoPiGo Driven by Tensorflow
 GoPiGo robot driven autonomously by trained CNN using retrained Tensorflow inception 3.
+
+How to collection your own data:
+
+Prerequisite:
+Raspberry Pi Camera successfully setted
+GoPiGo package installed
+vnc
+
+Steps:
+1. remote connect your GoPiGo through ssh
+```
+ssh USERNAME@IP.ADDRESS
+```
+
+2. Start remote desktop control
+```
+tightvncserver
+vncserver :1 -geometry 1920x1080 -depth 24
+```
+start Remote Desktop Viewer on your PC. Then login your GoPiGo.
+
+3. Open a terminal using your Remote Desktop Viewer on GoPiGo
+4. create a folder called ```Data```, and three subfolders called ```a, w, d``` respectively.
+5. run ```python datacollection.py```
+6. Control your GoPiGo to follow the "road" you've built using either white paper or other materials.
+7. The images will be saved in ```a, w, d``` folders. 
+8. Copy or scp your ```Data``` folder to PC or Laptop and trained them using inception @  tensorflow for poets.
+
+
 Run server.py on laptop or desktop with wifi by typing:
 ```
 python server.py --model=LOCATION of YOUR .pb FILE --labels=LOCATION of YOUR .txt LABEL FILE
