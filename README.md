@@ -62,7 +62,7 @@ start Remote Desktop Viewer on your PC. Then login your GoPiGo.
 7. The images will be saved in ```a, w, d``` folders. 
 8. Copy or scp your ```Data``` folder to PC or Laptop and trained them using inception @petewarden  [Tensorflow for Poets](https://petewarden.com/2016/02/28/tensorflow-for-poets/)
 
-## Then after you have your network trained, you can do the following to control your GoPiGo.
+## How to control GoPiGo using your trained CNN?
 1.Run server.py on laptop or desktop with wifi by typing:
 ```
 python server.py --model=LOCATION of YOUR .pb FILE --labels=LOCATION of YOUR .txt LABEL FILE
