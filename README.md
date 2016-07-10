@@ -2,14 +2,14 @@
 ## Intro
 This readme file tends to teach you how to use GoPiGo's camera to record the image data and label data. And then you can use those data to train your CNN using Tensorflow. The server.py file in this repository is programmed to use your trained CNN to control your GoPiGo robot to do a simple and low level autonomous driving.
 
-# How to collection your own data
+## How to collection your own data
 
-# Prerequisite on PC or laptop:
+## Prerequisite on PC or laptop:
 ```
 Tensorflow
 ```
 
-# Prerequisite on GoPiGo:
+## Prerequisite on GoPiGo:
 Raspberry Pi Camera enabled
 
 GoPiGo package installed
@@ -17,7 +17,7 @@ GoPiGo package installed
 vnc
 
 
-# Steps:
+## Steps:
 1.remote connect your GoPiGo through ssh
 ```
 ssh USERNAME@IP.ADDRESS
@@ -37,7 +37,7 @@ start Remote Desktop Viewer on your PC. Then login your GoPiGo.
 7. The images will be saved in ```a, w, d``` folders. 
 8. Copy or scp your ```Data``` folder to PC or Laptop and trained them using inception @petewarden  [Tensorflow for Poets](https://petewarden.com/2016/02/28/tensorflow-for-poets/)
 
-# Then after you have your network trained, you can do the following to control your GoPiGo.
+## Then after you have your network trained, you can do the following to control your GoPiGo.
 1.Run server.py on laptop or desktop with wifi by typing:
 ```
 python server.py --model=LOCATION of YOUR .pb FILE --labels=LOCATION of YOUR .txt LABEL FILE
@@ -50,7 +50,7 @@ python client.py
 
 3.You should be able to see your GoPiGo drive itself. The larger your training data set is, the better its performance will be. So collect as more data as you can !!! 
 
-# Explaination of What the server.py code is doing:
+## Explaination of What the server.py code is doing:
 
 1. create socket and listening. 
 
@@ -60,7 +60,7 @@ python client.py
 
 4. Send the output label to the client (GoPiGo) through TCP connection.
 
-# Explaination of What the client.py code is doing:
+## Explaination of What the client.py code is doing:
 
 1. Capture an image in front and save it as jpg file. 
 
