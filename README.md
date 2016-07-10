@@ -1,7 +1,7 @@
 # GoPiGo Driven by Tensorflow
 ## Intro
 This readme file tends to teach you how to use GoPiGo's camera to record the image data and label data. And then you can use those data to train your CNN using Tensorflow. The server.py file in this repository is programmed to use your trained CNN to control your GoPiGo robot to do a simple and low level autonomous driving.
-## Explaination of What the server.py code does:
+### Explaination of What the server.py code does:
 
 1. create socket and listening. 
 
@@ -11,7 +11,7 @@ This readme file tends to teach you how to use GoPiGo's camera to record the ima
 
 4. Send the output label to the client (GoPiGo) through TCP connection.
 
-## Explaination of What the client.py code does:
+### Explaination of What the client.py code does:
 
 1. Capture an image in front and save it as jpg file. 
 
