@@ -14,7 +14,7 @@ GoPiGo package installed
 
 vnc
 
-## How to collection your own data
+## How to collect your own data
 
 
 
