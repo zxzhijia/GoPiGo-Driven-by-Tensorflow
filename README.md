@@ -52,7 +52,7 @@ python client.py
 
 3.You should be able to see your GoPiGo drive itself. The larger your training data set is, the better its performance will be. So collect as more data as you can !!! 
 
-## Explaination of What the server.py code is doing:
+## Explaination of What the server.py code does:
 
 1. create socket and listening. 
 
@@ -62,7 +62,7 @@ python client.py
 
 4. Send the output label to the client (GoPiGo) through TCP connection.
 
-## Explaination of What the client.py code is doing:
+## Explaination of What the client.py code does:
 
 1. Capture an image in front and save it as jpg file. 
 
