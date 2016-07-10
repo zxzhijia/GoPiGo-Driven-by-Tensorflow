@@ -1,6 +1,0 @@
-bazel-bin/tensorflow/examples/image_retraining/retrain \
---bottleneck_dir=/home/xu/Desktop/Robot/bottlenecks \
---model_dir=/home/xu/Desktop/Robot/inception \
---output_graph=/home/xu/Desktop/Robot/retrained_graph.pb \
---output_labels=/home/xu/Desktop/Robot/retrained_labels.txt \
---image_dir /home/xu/Desktop/Robot/Data
