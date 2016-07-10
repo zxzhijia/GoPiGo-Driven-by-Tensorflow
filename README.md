@@ -1,17 +1,19 @@
 # GoPiGo Driven by Tensorflow
 This readme file tends to teach you how to use GoPiGo's camera to record the image data and label data. And then you can use those data to train your CNN using Tensorflow. The server.py file in this repository is programmed to use your trained CNN to control your GoPiGo robot to do a simple and low level autonomous driving.
 
-# How to collection your own data:
+# How to collection your own data
 
 # Prerequisite on PC or laptop:
-```Tensorflow```
+```
+Tensorflow
+```
 
 # Prerequisite on GoPiGo:
-```Raspberry Pi Camera enabled```
+Raspberry Pi Camera enabled
 
-```GoPiGo package installed```
+GoPiGo package installed
 
-```vnc```
+vnc
 
 
 # Steps:
