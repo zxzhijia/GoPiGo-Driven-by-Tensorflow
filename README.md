@@ -7,7 +7,7 @@ This readme file tends to teach you how to use GoPiGo's camera to record the ima
 Tensorflow
 ```
 
-### Prerequisite on GoPiGo:
+## Prerequisite on GoPiGo:
 Raspberry Pi Camera enabled
 
 GoPiGo package installed
