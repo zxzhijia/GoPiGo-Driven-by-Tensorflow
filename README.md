@@ -1,6 +1,29 @@
 # GoPiGo Driven by Tensorflow
 ## Intro
 This readme file tends to teach you how to use GoPiGo's camera to record the image data and label data. And then you can use those data to train your CNN using Tensorflow. The server.py file in this repository is programmed to use your trained CNN to control your GoPiGo robot to do a simple and low level autonomous driving.
+## Explaination of What the server.py code does:
+
+1. create socket and listening. 
+
+2. Build the trained network using .pb file and txt file.
+
+3. run the network and output a label with either 'w' for go front, 'a' for go left, 'd' for turn right.
+
+4. Send the output label to the client (GoPiGo) through TCP connection.
+
+## Explaination of What the client.py code does:
+
+1. Capture an image in front and save it as jpg file. 
+
+2. connect to the socket.
+
+3. Send image to server.
+
+4. Receive output command from server through TCP.
+
+5. excute command to control the robot.
+
+
 
 ## Prerequisite on PC or laptop:
 ```
@@ -52,24 +75,3 @@ python client.py
 
 3.You should be able to see your GoPiGo drive itself. The larger your training data set is, the better its performance will be. So collect as more data as you can !!! 
 
-## Explaination of What the server.py code does:
-
-1. create socket and listening. 
-
-2. Build the trained network using .pb file and txt file.
-
-3. run the network and output a label with either 'w' for go front, 'a' for go left, 'd' for turn right.
-
-4. Send the output label to the client (GoPiGo) through TCP connection.
-
-## Explaination of What the client.py code does:
-
-1. Capture an image in front and save it as jpg file. 
-
-2. connect to the socket.
-
-3. Send image to server.
-
-4. Receive output command from server through TCP.
-
-5. excute command to control the robot.
