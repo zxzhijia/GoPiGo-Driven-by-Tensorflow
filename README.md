@@ -4,7 +4,7 @@ This readme file tends to teach you how to use [GoPiGo](http://www.dexterindustr
 
 ![alt tag](http://32414320wji53mwwch1u68ce.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/GoPiGo-with-Servo-and-Ultrasonic-facing-right-800x800.jpg)
 
-### Explaination of What the server.py code does:
+### What the server.py code does:
 
 1. create socket and listening. 
 
@@ -14,7 +14,7 @@ This readme file tends to teach you how to use [GoPiGo](http://www.dexterindustr
 
 4. Send the output label to the client (GoPiGo) through TCP connection.
 
-### Explaination of What the client.py code does:
+### What the client.py code does:
 
 1. Capture an image in front and save it as jpg file. 
 
