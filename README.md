@@ -76,6 +76,7 @@ python client.py
 
 3.You should be able to see your GoPiGo drive itself. The larger your training data set is, the better its performance will be. So collect as more data as you can !!! 
 
-
+## Tips
+1. When you collect data, it's faster to turn the camera of the GoPiGo to the left and label the corresponding images as 'right' or 'd'. Vice versa for the 'left' or 'a'. This requires some revise of the saving folders in the datacollection.py file.  
 
 
