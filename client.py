@@ -5,7 +5,6 @@ import pygame #Gives access to KEYUP/KEYDOWN events
 import picamera
 import os, os.path
 import numpy as np
-import tensorflow as tf
 import argparse
 import os
 import sys
