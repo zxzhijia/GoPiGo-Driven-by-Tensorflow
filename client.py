@@ -18,7 +18,7 @@ if __name__ == '__main__':
         imagename='/home/pi/Desktop/capture.jpg'
         camera.capture(imagename)
         s = socket.socket()         # Create a socket object
-        host = '192.168.1.15' # Get local machine name
+        host = '192.168.1.10' # Get local machine name
         port = 12344                 # Reserve a port for your service.
 
         
