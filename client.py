@@ -19,7 +19,7 @@ if __name__ == '__main__':
         camera.capture(imagename)
         s = socket.socket()         # Create a socket object
         host = '192.168.1.10' # Get local machine name
-        port = 12344                 # Reserve a port for your service.
+        port = 8800                 # Reserve a port for your service.
 
         
         s.connect((host, port))
